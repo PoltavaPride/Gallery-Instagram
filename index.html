@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+	
+		<title>My Instagram Gallery - iBacor.com</title>
+
+		<!-- Include jQuery -->
+		<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+
+		<!-- Include fancybox library -->
+		<link type="text/css" rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"/>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+		<script>
+			$(document).ready(function(){	
+				$(".ins_popup").fancybox({
+					openEffect : 'fade',
+					closeEffect : 'fade'
+				});
+			});
+		</script>
+
+		<!-- jQuery my instagram gallery -->
+		<script src="my-instagram-gallery.js"></script>
+
+		<!-- Setting Example -->
+		<script>
+			bcr_mig(
+				ins_id = 503807090, // your user_id
+				ins_token = '141970.467ede5.edbc9c37472d41b790e1db8948793f11' // your token
+			);
+		</script>
+
+		<!-- Custom style my instagram gallery -->
+		<link type="text/css" rel="stylesheet" href="my-instagram-gallery.css" />
+
+	</head>
+	<body>
+
+		<!-- Your gallery -->
+		<div class="bcr_ins_gallery"></div>
+
+	
+
+	</body>
+</html>
